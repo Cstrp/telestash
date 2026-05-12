@@ -1,0 +1,5 @@
+TELEGRAM_SESSION="<YOUR_TELEGRAM_SESSION>" # You can generate a new session string using the `generate-session` script in the `scripts` directory.
+
+#  You can obtain your Telegram API ID and API Hash by creating a new application on the Telegram website: https://my.telegram.org/apps
+TELEGRAM_API_HASH="<YOUR_TELEGRAM_API_HASH>" 
+TELEGRAM_API_ID="<YOUR_TELEGRAM_API_ID>"
