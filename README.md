@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Telestash (Nuxt 4 + Tauri)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Desktop app powered by Nuxt 4 frontend and Tauri runtime.
 
 ## Setup
 
@@ -20,56 +20,36 @@ yarn install
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Install Rust toolchain (required by Tauri):
 
 ```bash
-# npm
-npm run dev
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
 
-# pnpm
+## Development
+
+Run Tauri with Nuxt dev server (recommended):
+
+```bash
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Run only Nuxt dev server:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm dev:web
 ```
 
-Locally preview production build:
+## Build
+
+Build web assets:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+pnpm build:web
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Build desktop app:
+
+```bash
+pnpm build:tauri
+```
